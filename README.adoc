@@ -1,0 +1,23 @@
+# ROAD AI
+
+Semantische Segmentierung einer Straße. Das Netzwerk wurde zu 98% mit synthetischen Daten trainiert. 
+
+## Training
+
+Das Training kann entwerder lokal oder mit Hilfe von https://colab.research.google.com[Google Colab] ausgeführt werden. Hierfür stehen zwei IPython Notebooks zur Verfügung.
+
+### Lokal
+
+Das lokale Training erfordert einen PC mit einer NVIDIA GPU und CUDA-Unterstützung. Falls dies erfüllt ist, kann das Tranining mit den Notebook *train_local.ipynb* durchgeführt werden. Hierfür müssen die einzelenen Zellen der Reihe nach ausgeführt werden.
+
+### Google Colab
+
+Für das Traning auf Google Colab müssen das Notebook *train_colab.ipynb* ausgeführt werden. Hierbei gilt es zu beachten, dass die Traningsdaten bereits in die Colab Session geladen wurden.
+
+## Inference
+
+Um Inference auf einem Video laufen zu lassen, kann das Script *test.py* genutzt werden. Hierfür müssen zunächst der Video-Pfad, der Name der tranierten Netzes sowie die Bildauflösung angegeben werden.
+
+Anschließend kann die Ausführung mit folgendem Befehl gestartet werden
+
+    python test.py 
