@@ -21,7 +21,7 @@ COLORS = [
 
 WIDTH, HEIGHT = 224, 224
 VIDEO_NAME = ""
-MODEL_NAME = 'unet_vgg16.h5'
+MODEL_NAME = 'model2.h5'
 
 #############################################################################
 
